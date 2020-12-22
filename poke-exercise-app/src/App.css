@@ -1,0 +1,10 @@
+.PageWrapper {
+    max-width: 900vh;
+    margin: auto;
+}
+
+.App-section {
+    padding: 90px 60px;
+    background-color: lightgrey;
+
+}
