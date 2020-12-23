@@ -6,5 +6,10 @@
 .App-section {
     padding: 90px 60px;
     background-color: lightgrey;
+}
 
+.App-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: whitesmoke;
 }
