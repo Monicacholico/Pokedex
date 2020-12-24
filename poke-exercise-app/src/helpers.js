@@ -1,4 +1,4 @@
-let arr = [23, 45, 6,7, 78, 96, 54, 4, 3];
+
 
 
 function choice(items) {
@@ -6,6 +6,5 @@ function choice(items) {
     return items[randomItem];
 }
 
-choice(arr);
 
 export {choice};

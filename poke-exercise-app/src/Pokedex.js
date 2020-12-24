@@ -28,15 +28,31 @@ class PokeDex extends Component {
         let arrofCards = [{displayCards}];
         console.log(arrofCards);
         let randomizeCards = Math.floor(Math.random() * pokeCardsProps.length);
-        console.log(randomizeCards)
+        // console.log(randomizeCards)
         let randomCard = pokeCardsProps[randomizeCards];
         console.log(randomCard.name);
+        function randomizer( arr) {
+            for(let i = 0; i < arr.length; i++ ) {
+                let ran = Math.floor(Math.random() * arr.length)
+                return pokeCardsProps[ran];
+            }
+        }
+        let finalRandom = randomizer(pokeCardsProps);
+        let choiceAlt = choice(pokeCardsProps);
         return (
             <div className="App-wrapper">
                 <PokeCard
                 name={randomCard.name}
                 />
                 {/* {displayCards} */}
+                <PokeCard
+                name= {finalRandom.name}
+                type={finalRandom.type}
+                />
+                <PokeCard
+                name= {choiceAlt.name}
+                type={choiceAlt.type}
+                />
 
             </div>
         )
