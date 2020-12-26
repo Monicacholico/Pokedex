@@ -12,6 +12,7 @@ class App extends Component {
                 <div className="App-section">
                 <h2> Will render Pokedex here!</h2>
                    <PokeDex/>
+                   <PokeDex/>
                 </div>
             </PageWrapper>
         )

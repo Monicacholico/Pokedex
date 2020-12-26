@@ -53,7 +53,6 @@ class PokeDex extends Component {
                 name= {choiceAlt.name}
                 type={choiceAlt.type}
                 />
-
             </div>
         )
     }
