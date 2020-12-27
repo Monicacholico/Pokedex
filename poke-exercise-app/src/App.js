@@ -3,9 +3,7 @@ import PageWrapper from './PageWrapper';
 import PokeDex from './Pokedex';
 import './App.css';
 
-
 class App extends Component {
-
     render() {
         return (
             <PageWrapper>

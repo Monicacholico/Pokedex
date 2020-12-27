@@ -7,6 +7,7 @@ import './App.css';
 
 class PokeDex extends Component {
     render() {
+        const {win, lose} = this.props;
         const pokeCardsProps = [
             {id: 4, name: 'Charmander', type: 'fire', base_experience: 62},
             {id: 7, name: 'Squirtle', type: 'water', base_experience: 63 },
@@ -39,20 +40,36 @@ class PokeDex extends Component {
         }
         let finalRandom = randomizer(pokeCardsProps);
         let choiceAlt = choice(pokeCardsProps);
+        function sumPoints() {
+            let totalPoints = randomCard.base_experience + finalRandom.base_experience + choiceAlt.base_experience;
+            console.log('hello points ' + totalPoints);
+           
+            // if (totalPoints > totalPoints) {
+            //     console.log("Winner");
+            // } else {
+            //     console.log('Looser');
+            // }
+        }
+        sumPoints();
         return (
             <div className="App-wrapper">
                 <PokeCard
                 name={randomCard.name}
+                type={randomCard.type}
+                base_experience={randomCard.base_experience}
                 />
                 {/* {displayCards} */}
                 <PokeCard
                 name= {finalRandom.name}
                 type={finalRandom.type}
+                base_experience={finalRandom.base_experience}
                 />
                 <PokeCard
                 name= {choiceAlt.name}
                 type={choiceAlt.type}
+                base_experience={choiceAlt.base_experience}
                 />
+                
             </div>
         )
     }
