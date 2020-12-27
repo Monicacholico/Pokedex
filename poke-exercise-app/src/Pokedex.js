@@ -8,7 +8,7 @@ import './Pokedex.css';
 
 class PokeDex extends Component {
     render() {
-        let {points} = this.props;
+        // let { points } = this.props;
         const pokeCardsProps = [
             {id: 4, name: 'Charmander', type: 'fire', base_experience: 62},
             {id: 7, name: 'Squirtle', type: 'water', base_experience: 63 },
@@ -51,7 +51,7 @@ class PokeDex extends Component {
             //     console.log('Looser');
             // }
         }
-        points = sumPoints();
+        let points = sumPoints();
         return (
             <div className="App-wrapper">
             <h2 className='Pokedex-header'>{points}</h2>
