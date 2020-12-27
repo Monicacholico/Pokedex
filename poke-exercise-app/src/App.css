@@ -9,7 +9,7 @@
 }
 
 .App-wrapper {
-    display: flex;
-    flex-flow: row wrap;
+    /* display: flex;
+    flex-flow: row wrap; */
     background-color: whitesmoke;
 }
