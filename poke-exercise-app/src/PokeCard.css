@@ -1,14 +1,27 @@
 .PokeCard-card {
-    padding: 24px 0;
+    padding: 24px 15px;
     text-align: center;
     background-color: lightpink;
     /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); */
     box-shadow: 7px 10px 12px -5px rgba(68, 48, 48, 0.56);
     transition: transform .2s, box-shadow .3s;
-    width: calc(25% - 12px);
+    width: calc(18% - 12px);
     margin: 20px;
     border-radius: 0.5rem;
 
+}
+.PokeCard-card img {
+    transition: all ease 500ms;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 150px;
+
+}
+
+.PokeCard-card img:hover {
+    transform: scale(1.25);
+    opacity: 0.7;
 }
 
 .PokeCard-img {
