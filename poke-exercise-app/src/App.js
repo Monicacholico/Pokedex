@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import PageWrapper from './PageWrapper';
 import PokeDex from './Pokedex';
 import './App.css';
+import PokeCard from './PokeCard';
 
 class App extends Component {
     render() {
@@ -9,8 +10,12 @@ class App extends Component {
             <PageWrapper>
                 <div className="App-section">
                 <h2> Will render Pokedex here!</h2>
-                   <PokeDex/>
-                   <PokeDex/>
+                   <PokeDex
+
+                   />
+                   {/* <PokeDex
+
+                   /> */}
                 </div>
             </PageWrapper>
         )
