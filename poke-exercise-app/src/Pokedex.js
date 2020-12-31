@@ -100,7 +100,7 @@ class PokeDex extends Component {
                 Total Points : {exp}
                 </h2>
             <h3 className={isWinner ? 'Winner' : 'Looser'}>
-                {this.props.isWinner ? 'YOU WIN!!!' : 'YOU LOOSE!!!'}
+                {isWinner ? 'YOU WIN!!!' : 'YOU LOOSE!!!'}
                 </h3>
             <div className="Pokedex-wrapper">
                 {/* <PokeCard
