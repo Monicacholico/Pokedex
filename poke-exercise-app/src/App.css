@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+
+
 .PageWrapper {
     max-width: 900vh;
     margin: auto;
 }
 
 .App-section {
+    font-family: 'Work-Sans';
     padding: 90px 60px;
     background-color: lightgrey;
 }
 
 .App-wrapper {
-    /* display: flex;
-    flex-flow: row wrap; */
+
     background-color: whitesmoke;
 }

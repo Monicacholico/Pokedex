@@ -13,7 +13,9 @@ class PokeCard extends Component {
             <div className="PokeCard-card">
                 <div className="PokeCard-header">
                 <h2 className="PokeCard-Title">{name}</h2>
-                <img src={imgSource} className="PokeCard-img" alt={name}/>
+                <div className="PokeCard-img">
+                <img src={imgSource}alt={name}/>
+                </div>
                 </div>
                 <div className="PokeCard-body">
                 <p className="Pokecard-type">{type}</p>
