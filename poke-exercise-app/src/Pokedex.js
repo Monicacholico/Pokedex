@@ -23,8 +23,6 @@ class PokeDex extends Component {
         let exp = this.props.exp;
         let isWinner = this.props.isWinner;
 
-
-
         // function zerosHandler() {
         //     const cardIds = pokeCardsProps.map(pokeCard => pokeCard.id);
         //     console.log(cardIds);
